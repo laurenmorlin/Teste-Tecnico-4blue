@@ -14,7 +14,7 @@ Passos para reproduzir:
 
 3 - Selecionar o botão "Entrar"
 
-<img width="678" height="730" alt="image" src="https://github.com/user-attachments/assets/34408749-b9d5-4395-bb10-666a09335163" />
+<img width="669" height="724" alt="image" src="https://github.com/user-attachments/assets/b5bc8e6e-954b-433a-a0e5-f376d19e9c3d" />
 <img width="2536" height="1220" alt="image" src="https://github.com/user-attachments/assets/ce12e713-3b38-4304-a409-c2260e2fe1c0" />
 
 Resultado atual: No canto inferior direito da tela o sistema informa que ocorreu um "Erro inesperado", mas também informa “Login realizado com sucesso”.
@@ -43,7 +43,7 @@ Passos para reproduzir:
 
 4 - Selecionar o botão "Entrar"
 
-<img width="676" height="728" alt="image" src="https://github.com/user-attachments/assets/c898cd93-f643-4c1d-a63f-5c744f873f27" />
+<img width="663" height="722" alt="image" src="https://github.com/user-attachments/assets/a3683588-ccae-4409-8d64-a2f40e30a58e" />
 <img width="2536" height="1220" alt="image" src="https://github.com/user-attachments/assets/ce12e713-3b38-4304-a409-c2260e2fe1c0" />
 
 Resultado atual: No canto inferior direito da tela o sistema informa que ocorreu um "Erro inesperado", mas também informa “Login realizado com sucesso”.
