@@ -73,10 +73,12 @@ Passos para reproduzir:
 4 - Clicar no botão Entrar
 
 Ex.: Preenchido apenas com números
+
 <img width="671" height="728" alt="image" src="https://github.com/user-attachments/assets/e1068ebd-bf98-4171-bb2e-d8c4070faaa8" />
 <img width="582" height="778" alt="image" src="https://github.com/user-attachments/assets/38e0fab0-eef8-4c3d-9520-7cbb53c9bc85" />
 
 Ex. 2: Preenchido com um formato de e-mail válido
+
 <img width="485" height="527" alt="image" src="https://github.com/user-attachments/assets/feeb6f4f-7755-419b-b33a-290dfe272d45" />
 <img width="483" height="763" alt="image" src="https://github.com/user-attachments/assets/c0a8b79a-531f-49d3-851a-2e9ae7bab6ab" />
 
