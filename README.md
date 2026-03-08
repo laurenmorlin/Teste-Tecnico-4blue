@@ -179,7 +179,7 @@ Prioridade: Alta
 
 
 
-Bug 5
+Bug 7
 
 Título: Mensagem de erro inadequada ao deixar campo e-mail vazio
 
@@ -189,16 +189,18 @@ Passos para reproduzir:
 
 1 -Acessar a tela de login.
 
-2 - Preencher o campo de senha e deixar o campo de e-mail vazio.
+2 - Deixar o campo de e-mail vazio
 
-3 - Clicar no botão Entrar.
+3 - Preencher o campo senha
+
+4 - Clicar no botão Entrar
 
 <img width="838" height="906" alt="image" src="https://github.com/user-attachments/assets/c4cf7aa3-8403-45ca-b438-41cfad6e1f56" />
 <img width="698" height="946" alt="image" src="https://github.com/user-attachments/assets/194ebe13-ae0b-450d-9b6e-ac982abe76a1" />
 
 Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
 
-Resultado esperado: O comportamento ideal seria que o sistema exibisse uma mensagem mais genérica e segura, como: "Email ou senha inválidos", evitando a exposição de informações sobre a existência de contas registradas no banco de dados.
+Resultado esperado: O comportamento adequado seria o sistema primeiramente validar se o campo e-mail foi preenchido e informar que o campo de e-mail está vazio com uma mensagem: "Informe seu E-mail".
 
 Severidade: Alto
 
@@ -209,6 +211,8 @@ Prioridade: Alta
 
 
 
+
+**** 
 
 Bug 7
 
