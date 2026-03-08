@@ -48,7 +48,7 @@ Passos para reproduzir:
 
 Resultado atual: No canto inferior direito da tela o sistema informa que ocorreu um "Erro inesperado", mas também informa “Login realizado com sucesso”.
 
-Resultado esperado: O sistema deve impedir o login e exibir uma mensagem "Informe sua senha". O ideal também seria o bloquear a inclusão de espaços no campo e-mail, garantindo que apenas e-mails válidos sejam aceitos.
+Resultado esperado: O sistema deve impedir o login e exibir uma mensagem "Informe sua senha". O ideal também seria o bloquear a inclusão de espaços em branco no campo e-mail, garantindo que apenas e-mails válidos sejam aceitos.
 
 Severidade: Crítico
 
@@ -142,7 +142,7 @@ Passos para reproduzir:
 
 Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
 
-Resultado esperado: O comportamento ideal seria que o sistema fizesse uma validação da senha uma vez que "A senha precisa ter no mínimo 8 caracteres e 1 caractere especial.", e então exibir uma mensagem genérica como "Email ou senha inválidos" 
+Resultado esperado: O comportamento ideal seria que o sistema fizesse uma validação da senha uma vez que "A senha precisa ter no mínimo 8 caracteres e 1 caractere especial.", e então exibir uma mensagem genérica como "Email ou senha inválidos".
 
 Severidade: Médio
 
@@ -173,19 +173,40 @@ Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma co
 
 Resultado esperado: O comportamento ideal seria que o sistema exibisse uma mensagem genérica e segura, como: "Email ou senha inválidos", evitando a exposição de informações sobre a existência de contas registradas no banco de dados.
 
-Severidade: Alto
+Severidade: Médio
 
-Prioridade: Alta
-
-
+Prioridade: Média
 
 ------
 
- 
-
 Bug 7
 
-Título: Conta criada com sucesso sem preenchimento de dados obrigatórios
+Título: Ajustar nome do botão "Sair da conta"
+
+Descrição: Na tela Login realizado com sucesso há um botão escrito "Sair da Conta".
+
+Passos para reproduzir:
+
+1 - Acessar a tela Criar Conta
+
+2 - Colocar um e-mail e senha válidos
+
+3 - O sistema vai exibir a tela Login realizado com sucesso
+<img width="886" height="703" alt="image" src="https://github.com/user-attachments/assets/d09429df-c2a1-45c9-a3df-0d639c13c99b" />
+
+Resultado atual: Na tela Login realizado com sucesso há um botão escrito "Sair da Conta".
+
+Resultado esperado: Ajustar o nome do botão "Sair da Conta" para algo como "Continuar para o sistema".
+
+Severidade: 
+
+Prioridade:
+
+------
+
+Bug 8
+
+Título: Conta criada com sucesso sem preenchimento dos campos
 
 Descrição: Na tela de Criar Conta, ao clicar no botão Criar Conta sem preencher nenhum campo, o sistema informa que a conta foi criada com sucesso.
 
@@ -199,13 +220,15 @@ Passos para reproduzir:
 <img width="681" height="775" alt="image" src="https://github.com/user-attachments/assets/3440368c-56a2-48bf-bc6c-a3e3e0c12364" />
 <img width="681" height="510" alt="image" src="https://github.com/user-attachments/assets/c2d6f489-f4d6-4dce-b135-4bf0440ade27" />
 
-Resultado atual: O sistema exibe a mensagem “Conta criada com sucesso” mesmo sem dados informados.
+Resultado atual: O sistema exibe a mensagem “Conta criada com sucesso” mesmo os sem dados informados.
 
 Resultado esperado: O sistema deve impedir o cadastro e solicitar o preenchimento dos campos obrigatórios.
 
-Severidade: Crítico
+Severidade: 
 
-Prioridade: Alta
+Prioridade: 
 
+------
 
+Bug 9
 
