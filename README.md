@@ -2,7 +2,7 @@ Bug 1
 
 Título: Login realizado com sucesso sem preenchimento de credenciais
 
-Descrição: Ao acessar a tela de login e selecionar o botão Entrar sem preencher os campos de e-mail e senha, o sistema informa que o login foi realizado com sucesso.
+Descrição: Ao acessar a tela de login e selecionar o botão "Entrar" sem preencher os campos de e-mail e senha, o sistema informa que o login foi realizado com sucesso.
 
 Passos para reproduzir:
 
@@ -31,13 +31,13 @@ Bug 2
 
 Título: Login realizado com sucesso sem preenchimento correto de credenciais
 
-Descrição: Ao acessar a tela de login e selecionar o botão Entrar sem preencher os campos de e-mail e senha corretamente, o sistema informa que o login foi realizado com sucesso.
+Descrição: Ao acessar a tela de login e selecionar o botão "Entrar" sem preencher os campos de e-mail e senha com valores válidos, o sistema informa que o login foi realizado com sucesso.
 
 Passos para reproduzir:
 
 1 - Acessar a tela de login
 
-2 - Preencher o campo e-mail com espaços em branco
+2 - Preencher o campo e-mail apenas com espaços em branco
 
 3 - Não preencher o campo senha
 
@@ -48,7 +48,7 @@ Passos para reproduzir:
 
 Resultado atual: No canto inferior direito da tela o sistema informa que ocorreu um "Erro inesperado", mas também informa “Login realizado com sucesso”.
 
-Resultado esperado: O sistema deve impedir o login e exibir uma mensagem "Email ou senha inválidos". O ideal também seria o sistema bloquear a inclusão de espaços no campo e-mail, garantindo que apenas e-mails válidos sejam aceitos.
+Resultado esperado: O sistema deve impedir o login e exibir uma mensagem "Informe sua senha". O ideal também seria o bloquear a inclusão de espaços no campo e-mail, garantindo que apenas e-mails válidos sejam aceitos.
 
 Severidade: Crítico
 
@@ -60,53 +60,58 @@ Bug 3
 
 Título: Mensagem de erro inadequada ao deixar o campo Senha vazio
 
-Descrição: Ao inserir um formato inválido de e-mail e clicar no botão "Entrar", o sistema exibe a mensagem "Conta não encontrada. Crie uma conta primeiro."
+Descrição: Ao preencher o campo e-mail, deixar o campo senha vazio e clicar no botão "Entrar", o sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
 
 Passos para reproduzir:
 
-1 - Acessar a tela de login.
+1 - Acessar a tela de login
 
-2 - Inserir um formato de e-mail inválido Ex.: Preencher apenas com números.
+2 - Inserir qualquer valor no campo e-mail Ex.: Preencher apenas com números. Ex. 2: Preencher com um formato de e-mail válido, como teste1@gmail.com
 
-3 - Deixar o campo de senha vazio.
+3 - Deixar o campo de senha vazio
 
-4 - Clicar no botão Entrar.
+4 - Clicar no botão Entrar
 
+Ex.: Preenchido apenas com números
 <img width="671" height="728" alt="image" src="https://github.com/user-attachments/assets/e1068ebd-bf98-4171-bb2e-d8c4070faaa8" />
 <img width="582" height="778" alt="image" src="https://github.com/user-attachments/assets/38e0fab0-eef8-4c3d-9520-7cbb53c9bc85" />
 
-Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
-
-Resultado esperado: O comportamento ideal seria que o sistema exibisse uma mensagem mais genérica e segura, como: "Email ou senha inválidos", evitando a exposição de informações sobre a existência de contas registradas no banco de dados.
-
-Severidade: Alto
-
-Prioridade: Alta
-
-
-
-Bug 4
-
-Título: Mensagem de erro inadequada ao deixar o campo de senha vazio no login
-
-Descrição: Ao preencher o campo e-mail e deixar o campo de senha vazio, ao clicar no botão "Entrar", o sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
-
-Passos para reproduzir:
-
-1 - Acessar a tela de login.
-
-2 - Preencher o campo e-mail com um e-mail válido. Ex.: teste1@gmail.com
-
-3 - Deixar o campo senha vazio.
-
-4 - Clicar no botão Entrar.
-
+Ex. 2: Preenchido com um formato de e-mail válido
 <img width="485" height="527" alt="image" src="https://github.com/user-attachments/assets/feeb6f4f-7755-419b-b33a-290dfe272d45" />
 <img width="483" height="763" alt="image" src="https://github.com/user-attachments/assets/c0a8b79a-531f-49d3-851a-2e9ae7bab6ab" />
 
 Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
 
-Resultado esperado: O comportamento adequado seria o sistema primeiramente validar se o campo senha foi preenchido, para então informar que o campo de senha está vazio com uma mensagem: "Informe sua Senha".
+Resultado esperado: O comportamento adequado seria o sistema primeiramente validar se os campos foram preenchidos, e então informar uma mensagem: "Informe sua Senha".
+
+Severidade: Médio
+
+Prioridade: Média
+
+
+
+Bug 4
+
+Título: Mensagem de erro inadequada ao deixar campo e-mail vazio
+
+Descrição: Ao inserir uma senha, não preencher o e-mail e clicar no botão "Entrar" o sistema exibe a mensagem "Conta não encontrada. Crie uma conta primeiro."
+
+Passos para reproduzir:
+
+1 - Acessar a tela de login
+
+2 - Deixar o campo de e-mail vazio
+
+3 - Preencher o campo senha com qualquer valor
+
+4 - Clicar no botão Entrar
+
+<img width="838" height="906" alt="image" src="https://github.com/user-attachments/assets/c4cf7aa3-8403-45ca-b438-41cfad6e1f56" />
+<img width="698" height="946" alt="image" src="https://github.com/user-attachments/assets/194ebe13-ae0b-450d-9b6e-ac982abe76a1" />
+
+Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
+
+Resultado esperado: O comportamento adequado seria o sistema primeiramente validar se os campos e-mail e senha foram preenchidos, e então informar que o campo de e-mail está vazio com uma mensagem: "Informe seu E-mail".
 
 Severidade: Médio
 
@@ -118,28 +123,28 @@ Bug 5
 
 Título: Mensagem de erro inadequada ao inserir senha inválida
 
-Descrição: Ao inserir um formato inválido de e-mail, com ou sem senha, ou ao preencher apenas a senha e clicar no botão "Entrar", o sistema exibe a mensagem "Conta não encontrada. Crie uma conta primeiro."
+Descrição: Ao inserir um formato válido de e-mail, com senha inválida, o sistema exibe a mensagem "Conta não encontrada. Crie uma conta primeiro."
 
 Passos para reproduzir:
 
-1 - Acessar a tela de login.
+1 - Acessar a tela de login
 
-2 - Inserir um formato de e-mail válido.
+2 - Inserir um formato de e-mail válido Ex.: teste1@gmail.com
 
-3 - Preencher o campo senha com valores entre 1 e 7 dígitos 
+3 - Preencher o campo senha com até 8 caracteres 
 
-4 - Clicar no botão Entrar.
+4 - Clicar no botão Entrar
 
 <img width="663" height="725" alt="image" src="https://github.com/user-attachments/assets/3f55c7d6-f3b0-4513-ba1d-5f6c01152d3d" />
 <img width="583" height="792" alt="image" src="https://github.com/user-attachments/assets/eed535b0-54b9-42d1-8d38-6cb4a31c77a1" />
 
 Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
 
-Resultado esperado: O comportamento ideal seria que o sistema exibisse uma mensagem "Senha inválida", pois Login não deve permitir senha com menos de 8 dígitos.
+Resultado esperado: O comportamento ideal seria que o sistema fizesse uma validação da senha uma vez que "A senha precisa ter no mínimo 8 caracteres e 1 caractere especial.", e então exibir uma mensagem genérica como "Email ou senha inválidos" 
 
-Severidade: Alto
+Severidade: Médio
 
-Prioridade: Alta
+Prioridade: Média
 
 
 
@@ -147,15 +152,15 @@ Bug 6
 
 Título: Mensagem de erro inadequada ao inserir senha inválida
 
-Descrição: Ao inserir um formato inválido de e-mail, com ou sem senha, ou ao preencher apenas a senha e clicar no botão "Entrar", o sistema exibe a mensagem "Conta não encontrada. Crie uma conta primeiro."
+Descrição: Ao inserir um formato válido de e-mail, preencher a senha e depois clicar no botão "Entrar", o sistema exibe a mensagem "Conta não encontrada. Crie uma conta primeiro."
 
 Passos para reproduzir:
 
 1 - Acessar a tela de login.
 
-2 - Inserir um formato de e-mail válido. Ex.: teste1@gmail.com
+2 - Inserir um formato de e-mail válido Ex.: teste1@gmail.com
 
-3 - Preencher o campo senha com 8 dígitos ou mais
+3 - Preencher o campo senha com pelo menos 8 caracteres e 1 caracter especial
 
 4 - Clicar no botão Entrar.
 
@@ -164,7 +169,7 @@ Passos para reproduzir:
 
 Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
 
-Resultado esperado: O comportamento ideal seria que o sistema exibisse uma mensagem mais genérica e segura, como: "Email ou senha inválidos", evitando a exposição de informações sobre a existência de contas registradas no banco de dados.
+Resultado esperado: O comportamento ideal seria que o sistema exibisse uma mensagem genérica e segura, como: "Email ou senha inválidos", evitando a exposição de informações sobre a existência de contas registradas no banco de dados.
 
 Severidade: Alto
 
@@ -172,47 +177,9 @@ Prioridade: Alta
 
 
 
+------
 
-
-
-
-
-
-
-Bug 7
-
-Título: Mensagem de erro inadequada ao deixar campo e-mail vazio
-
-Descrição: Ao inserir um formato inválido de e-mail, com ou sem senha, ou ao preencher apenas a senha e clicar no botão "Entrar", o sistema exibe a mensagem "Conta não encontrada. Crie uma conta primeiro."
-
-Passos para reproduzir:
-
-1 -Acessar a tela de login.
-
-2 - Deixar o campo de e-mail vazio
-
-3 - Preencher o campo senha
-
-4 - Clicar no botão Entrar
-
-<img width="838" height="906" alt="image" src="https://github.com/user-attachments/assets/c4cf7aa3-8403-45ca-b438-41cfad6e1f56" />
-<img width="698" height="946" alt="image" src="https://github.com/user-attachments/assets/194ebe13-ae0b-450d-9b6e-ac982abe76a1" />
-
-Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
-
-Resultado esperado: O comportamento adequado seria o sistema primeiramente validar se o campo e-mail foi preenchido e informar que o campo de e-mail está vazio com uma mensagem: "Informe seu E-mail".
-
-Severidade: Alto
-
-Prioridade: Alta
-
-
-
-
-
-
-
-**** 
+ 
 
 Bug 7
 
@@ -239,42 +206,4 @@ Severidade: Crítico
 Prioridade: Alta
 
 
-
-Bug 8
-
-Título: Campo de E-mail aceita espaços e apresenta mensagem inadequada.
-
-Descrição:
-Na tela de login, o campo de e-mail está permitindo a entrada de espaços em branco no início ou final do e-mail. Quando o e-mail é inserido com formato inválido (com espaços) e o botão "Entrar" é clicado, o sistema apresenta a mensagem:
-
-“Conta não encontrada. Crie uma conta primeiro.”
-O comportamento adequado seria exibir a mensagem:
-“Email ou senha inválidos”
-para evitar a exposição de informações sobre contas existentes e impedir que um atacante descubra quais e-mails existem no sistema.
-
-Passos para reproduzir:
-
-Acessar a tela de login.
-
-Inserir um e-mail com espaços em branco (exemplo: " teste@email.com ").
-
-Deixar o campo senha em branco.
-
-Clicar em Entrar.
-
-Resultado atual:
-O sistema exibe a mensagem:
-
-“Conta não encontrada. Crie uma conta primeiro.”
-
-Resultado esperado:
-O sistema deve exibir a mensagem:
-
-“Email ou senha inválidos”
-
-Severidade:
-Alto – O comportamento atual pode permitir que um atacante saiba se um e-mail está registrado no sistema, violando princípios de segurança.
-
-Prioridade:
-Alta – Esse bug compromete a segurança do sistema e deve ser corrigido antes do lançamento.
 
