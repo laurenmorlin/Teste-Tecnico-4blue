@@ -16,7 +16,6 @@ Passos para reproduzir:
 
 <img width="678" height="730" alt="image" src="https://github.com/user-attachments/assets/34408749-b9d5-4395-bb10-666a09335163" />
 <img width="2536" height="1220" alt="image" src="https://github.com/user-attachments/assets/ce12e713-3b38-4304-a409-c2260e2fe1c0" />
-<img width="651" height="531" alt="image" src="https://github.com/user-attachments/assets/198efbd7-3010-4e7b-a8e3-15a3553c0f33" />
 
 Resultado atual: No canto inferior direito da tela o sistema informa que ocorreu um "Erro inesperado", mas também informa “Login realizado com sucesso”.
 
@@ -46,7 +45,6 @@ Passos para reproduzir:
 
 <img width="676" height="728" alt="image" src="https://github.com/user-attachments/assets/c898cd93-f643-4c1d-a63f-5c744f873f27" />
 <img width="2536" height="1220" alt="image" src="https://github.com/user-attachments/assets/ce12e713-3b38-4304-a409-c2260e2fe1c0" />
-<img width="651" height="531" alt="image" src="https://github.com/user-attachments/assets/198efbd7-3010-4e7b-a8e3-15a3553c0f33" />
 
 Resultado atual: No canto inferior direito da tela o sistema informa que ocorreu um "Erro inesperado", mas também informa “Login realizado com sucesso”.
 
