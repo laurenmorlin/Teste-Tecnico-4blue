@@ -14,6 +14,7 @@ Passos para reproduzir:
 
 3 - Selecionar o botão "Entrar"
 
+<img width="678" height="730" alt="image" src="https://github.com/user-attachments/assets/34408749-b9d5-4395-bb10-666a09335163" />
 <img width="2536" height="1220" alt="image" src="https://github.com/user-attachments/assets/ce12e713-3b38-4304-a409-c2260e2fe1c0" />
 <img width="651" height="531" alt="image" src="https://github.com/user-attachments/assets/198efbd7-3010-4e7b-a8e3-15a3553c0f33" />
 
@@ -43,6 +44,7 @@ Passos para reproduzir:
 
 4 - Selecionar o botão "Entrar"
 
+<img width="676" height="728" alt="image" src="https://github.com/user-attachments/assets/c898cd93-f643-4c1d-a63f-5c744f873f27" />
 <img width="2536" height="1220" alt="image" src="https://github.com/user-attachments/assets/ce12e713-3b38-4304-a409-c2260e2fe1c0" />
 <img width="651" height="531" alt="image" src="https://github.com/user-attachments/assets/198efbd7-3010-4e7b-a8e3-15a3553c0f33" />
 
@@ -73,8 +75,8 @@ Passos para reproduzir:
 
 4 - Clicar no botão Entrar.
 
-<img width="542" height="598" alt="image" src="https://github.com/user-attachments/assets/c3828091-4ace-4f1a-8fb4-a1d8641b9397" />
-<img width="546" height="725" alt="image" src="https://github.com/user-attachments/assets/73a0f06c-bd89-4335-8ee3-ba2a6165ff68" />
+<img width="671" height="728" alt="image" src="https://github.com/user-attachments/assets/e1068ebd-bf98-4171-bb2e-d8c4070faaa8" />
+<img width="582" height="778" alt="image" src="https://github.com/user-attachments/assets/38e0fab0-eef8-4c3d-9520-7cbb53c9bc85" />
 
 Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
 
