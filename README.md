@@ -56,7 +56,6 @@ Prioridade: Alta
 
 
 
-
 Bug 3
 
 Título: Mensagem de erro inadequada ao deixar o campo Senha vazio
@@ -86,8 +85,7 @@ Prioridade: Alta
 
 
 
-
-Bug 5
+Bug 4
 
 Título: Mensagem de erro inadequada ao deixar o campo de senha vazio no login
 
@@ -116,10 +114,7 @@ Prioridade: Média
 
 
 
-
-
-
-Bug 4
+Bug 5
 
 Título: Mensagem de erro inadequada ao inserir senha inválida
 
@@ -129,14 +124,43 @@ Passos para reproduzir:
 
 1 - Acessar a tela de login.
 
-2 - Inserir um formato de e-mail inválido.
+2 - Inserir um formato de e-mail válido.
 
 3 - Preencher o campo senha com valores entre 1 e 7 dígitos 
 
 4 - Clicar no botão Entrar.
 
-<img width="542" height="598" alt="image" src="https://github.com/user-attachments/assets/c3828091-4ace-4f1a-8fb4-a1d8641b9397" />
-<img width="546" height="725" alt="image" src="https://github.com/user-attachments/assets/73a0f06c-bd89-4335-8ee3-ba2a6165ff68" />
+<img width="663" height="725" alt="image" src="https://github.com/user-attachments/assets/3f55c7d6-f3b0-4513-ba1d-5f6c01152d3d" />
+<img width="583" height="792" alt="image" src="https://github.com/user-attachments/assets/eed535b0-54b9-42d1-8d38-6cb4a31c77a1" />
+
+Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
+
+Resultado esperado: O comportamento ideal seria que o sistema exibisse uma mensagem "Senha inválida", pois Login não deve permitir senha com menos de 8 dígitos.
+
+Severidade: Alto
+
+Prioridade: Alta
+
+
+
+Bug 6
+
+Título: Mensagem de erro inadequada ao inserir senha inválida
+
+Descrição: Ao inserir um formato inválido de e-mail, com ou sem senha, ou ao preencher apenas a senha e clicar no botão "Entrar", o sistema exibe a mensagem "Conta não encontrada. Crie uma conta primeiro."
+
+Passos para reproduzir:
+
+1 - Acessar a tela de login.
+
+2 - Inserir um formato de e-mail válido. Ex.: teste1@gmail.com
+
+3 - Preencher o campo senha com 8 dígitos ou mais
+
+4 - Clicar no botão Entrar.
+
+<img width="659" height="722" alt="image" src="https://github.com/user-attachments/assets/1cd3fd86-f385-4793-863b-3c237410412c" />
+<img width="583" height="788" alt="image" src="https://github.com/user-attachments/assets/3194ea15-469a-4d9b-bf78-75815b711f93" />
 
 Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
 
@@ -145,6 +169,13 @@ Resultado esperado: O comportamento ideal seria que o sistema exibisse uma mensa
 Severidade: Alto
 
 Prioridade: Alta
+
+
+
+
+
+
+
 
 
 
