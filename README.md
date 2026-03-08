@@ -29,26 +29,34 @@ Prioridade: Alta
 
 Bug 2
 
-Título: Login realizado com sucesso sem preenchimento correto de credenciais
+Título: Login realizado com sucesso sem preenchimento de e-mail
 
-Descrição: Ao acessar a tela de login e selecionar o botão "Entrar" sem preencher os campos de e-mail e senha com valores válidos, o sistema informa que o login foi realizado com sucesso.
+Descrição: Ao acessar a tela de login e selecionar o botão "Entrar" sem preencher os campos de e-mail e preenchendo com uma senha cadastrada, o sistema informa que o login foi realizado com sucesso.
 
 Passos para reproduzir:
 
-1 - Acessar a tela de login
+1 - Acessar a tela Criar Conta
 
-2 - Preencher o campo e-mail apenas com espaços em branco
+2 - Preencher somente o campo senha
 
-3 - Não preencher o campo senha
+3 - Clicar no botão "Criar Conta"
 
-4 - Selecionar o botão "Entrar"
+4 - Na tela Login realizado com sucesso clicar em "Sair da Conta"
 
-<img width="663" height="722" alt="image" src="https://github.com/user-attachments/assets/a3683588-ccae-4409-8d64-a2f40e30a58e" />
-<img width="2536" height="1220" alt="image" src="https://github.com/user-attachments/assets/ce12e713-3b38-4304-a409-c2260e2fe1c0" />
+5 - Na tela de login não preencher o campo e-mail
+
+6 - Preencher o campo senha com a senha cadastrada na tela Criar conta
+
+7 - Selecionar o botão "Entrar"
+
+<img width="900" height="814" alt="image" src="https://github.com/user-attachments/assets/224bdb92-c4b3-43a3-877c-1313bb591ba0" />
+<img width="648" height="517" alt="image" src="https://github.com/user-attachments/assets/2aef05ed-07b9-40bc-9097-14442b33c6c6" />
+<img width="676" height="726" alt="image" src="https://github.com/user-attachments/assets/70f282aa-326e-48d9-b4c8-0164d4c21e93" />
+<img width="650" height="508" alt="image" src="https://github.com/user-attachments/assets/337620ec-167d-49a9-8789-fd126c5a89bf" />
 
 Resultado atual: No canto inferior direito da tela o sistema informa que ocorreu um "Erro inesperado", mas também informa “Login realizado com sucesso”.
 
-Resultado esperado: O sistema deve impedir o login e exibir uma mensagem "Informe sua senha". O ideal também seria o bloquear a inclusão de espaços em branco no campo e-mail, garantindo que apenas e-mails válidos sejam aceitos.
+Resultado esperado: O sistema deve impedir o login e exibir uma mensagem "Informe seu e-mail".
 
 Severidade: Crítico
 
@@ -58,17 +66,17 @@ Prioridade: Alta
 
 Bug 3
 
-Título: Mensagem de erro inadequada ao deixar o campo Senha vazio
+Título: Mensagem de erro ao usar uma conta cadastrada
 
-Descrição: Ao preencher o campo e-mail, deixar o campo senha vazio e clicar no botão "Entrar", o sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
+Descrição: Ao preencher o campo e-mail com uma conta cadastrada o sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
 
 Passos para reproduzir:
 
 1 - Acessar a tela de login
 
-2 - Inserir qualquer valor no campo e-mail Ex.: Preencher apenas com números. Ex. 2: Preencher com um formato de e-mail válido, como teste1@gmail.com
+2 - Inserir um e-mail cadastrado no campo  Ex. 2: Preencher com um e-mail cadastrado.
 
-3 - Deixar o campo de senha vazio
+3 - Deixar preencher ou não o campo senha
 
 4 - Clicar no botão Entrar
 
@@ -77,14 +85,14 @@ Ex.: Preenchido apenas com números
 <img width="671" height="728" alt="image" src="https://github.com/user-attachments/assets/e1068ebd-bf98-4171-bb2e-d8c4070faaa8" />
 <img width="582" height="778" alt="image" src="https://github.com/user-attachments/assets/38e0fab0-eef8-4c3d-9520-7cbb53c9bc85" />
 
-Ex. 2: Preenchido com um formato de e-mail válido
+Ex. 2: Preenchido com um e-mail cadastrado
 
-<img width="485" height="527" alt="image" src="https://github.com/user-attachments/assets/feeb6f4f-7755-419b-b33a-290dfe272d45" />
-<img width="483" height="763" alt="image" src="https://github.com/user-attachments/assets/c0a8b79a-531f-49d3-851a-2e9ae7bab6ab" />
+<img width="664" height="730" alt="image" src="https://github.com/user-attachments/assets/d6eec609-5a7a-46af-b590-7e3523b4ebcb" />
+<img width="581" height="661" alt="image" src="https://github.com/user-attachments/assets/b31e6431-80d3-48c1-9d49-dd60fdf77681" />
 
 Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
 
-Resultado esperado: O comportamento adequado seria o sistema primeiramente validar se os campos foram preenchidos, e então informar uma mensagem: "Informe sua Senha".
+Resultado esperado: O sistema deve primeiramente validar se os campos foram preenchidos e informar uma mensagem: "Informe sua Senha".
 
 Severidade: Médio
 
