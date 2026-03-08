@@ -25,7 +25,7 @@ Severidade: Crítico
 
 Prioridade: Alta
 
-
+------
 
 Bug 2
 
@@ -54,7 +54,7 @@ Severidade: Crítico
 
 Prioridade: Alta
 
-
+------
 
 Bug 3
 
@@ -90,7 +90,7 @@ Severidade: Médio
 
 Prioridade: Média
 
-
+------
 
 Bug 4
 
@@ -119,7 +119,7 @@ Severidade: Médio
 
 Prioridade: Média
 
-
+------
 
 Bug 5
 
@@ -148,7 +148,7 @@ Severidade: Médio
 
 Prioridade: Média
 
-
+------
 
 Bug 6
 
