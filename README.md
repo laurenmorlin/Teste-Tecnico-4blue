@@ -74,7 +74,7 @@ Passos para reproduzir:
 
 1 - Acessar a tela de login
 
-2 - Inserir um e-mail cadastrado no campo  Ex. 2: Preencher com um e-mail cadastrado.
+2 - Inserir um e-mail cadastrado no campo  Ex.: marilia.castanheira@gmail.com
 
 3 - Deixar preencher ou não o campo senha
 
@@ -82,8 +82,8 @@ Passos para reproduzir:
 
 Ex.: Preenchido apenas com números
 
-<img width="671" height="728" alt="image" src="https://github.com/user-attachments/assets/e1068ebd-bf98-4171-bb2e-d8c4070faaa8" />
-<img width="582" height="778" alt="image" src="https://github.com/user-attachments/assets/38e0fab0-eef8-4c3d-9520-7cbb53c9bc85" />
+<img width="675" height="732" alt="image" src="https://github.com/user-attachments/assets/2a46e7dd-1f71-4dc5-8d24-c8c1690db7ed" />
+<img width="586" height="661" alt="image" src="https://github.com/user-attachments/assets/16e19fe9-aa28-45dc-87f8-3f8a464e89b0" />
 
 Ex. 2: Preenchido com um e-mail cadastrado
 
