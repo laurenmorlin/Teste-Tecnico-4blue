@@ -76,7 +76,7 @@ Passos para reproduzir:
 
 2 - Inserir um e-mail cadastrado no campo  Ex.: marilia.castanheira@gmail.com
 
-3 - Deixar preencher ou não o campo senha
+3 - Preencher ou não o campo senha
 
 4 - Clicar no botão Entrar
 
@@ -102,30 +102,23 @@ Prioridade: Média
 
 Bug 4
 
-Título: Mensagem de erro inadequada ao deixar campo e-mail vazio
+Título: Retirar mensagem "A senha precisa ter no mínimo 8 caracteres e 1 caractere especial." na tela de login
 
-Descrição: Ao inserir uma senha, não preencher o e-mail e clicar no botão "Entrar" o sistema exibe a mensagem "Conta não encontrada. Crie uma conta primeiro."
+Descrição: Na tela de login aparece a mensagem "A senha precisa ter no mínimo 8 caracteres e 1 caractere especial.", não manter essa mensagem como boa prática de segurança.
 
 Passos para reproduzir:
 
 1 - Acessar a tela de login
 
-2 - Deixar o campo de e-mail vazio
+<img width="886" height="972" alt="image" src="https://github.com/user-attachments/assets/acfb2125-24d9-4d1a-bc24-3b727fd3e8d4" />
 
-3 - Preencher o campo senha com qualquer valor
+Resultado atual: Na tela de login aparece a mensagem "A senha precisa ter no mínimo 8 caracteres e 1 caractere especial."
 
-4 - Clicar no botão Entrar
-
-<img width="838" height="906" alt="image" src="https://github.com/user-attachments/assets/c4cf7aa3-8403-45ca-b438-41cfad6e1f56" />
-<img width="698" height="946" alt="image" src="https://github.com/user-attachments/assets/194ebe13-ae0b-450d-9b6e-ac982abe76a1" />
-
-Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
-
-Resultado esperado: O comportamento adequado seria o sistema primeiramente validar se os campos e-mail e senha foram preenchidos, e então informar que o campo de e-mail está vazio com uma mensagem: "Informe seu E-mail".
+Resultado esperado: Manter a mensagem "A senha precisa ter no mínimo 8 caracteres e 1 caractere especial." apenas na tela de Criar conta
 
 Severidade: Médio
 
-Prioridade: Média
+Prioridade: Baixa
 
 ------
 
