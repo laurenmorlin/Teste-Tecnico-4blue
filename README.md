@@ -183,16 +183,17 @@ Bug 7
 
 Título: Ajustar nome do botão "Sair da conta"
 
-Descrição: Na tela Login realizado com sucesso há um botão escrito "Sair da Conta".
+Descrição: Na tela Login realizado com Sucesso há um botão escrito "Sair da Conta".
 
 Passos para reproduzir:
 
-1 - Acessar a tela Criar Conta
+1 - Acessar a tela Login
 
-2 - Colocar um e-mail e senha válidos
+2 - Colocar um e-mail e senha válidos e clicar em "Entrar"
 
 3 - O sistema vai exibir a tela Login realizado com sucesso
-<img width="886" height="703" alt="image" src="https://github.com/user-attachments/assets/d09429df-c2a1-45c9-a3df-0d639c13c99b" />
+<img width="825" height="879" alt="image" src="https://github.com/user-attachments/assets/be9d330f-2bd3-401f-9732-1385b03ef97f" />
+<img width="886" height="703" alt="image" src="https://github.com/user-attachments/assets/9b482517-280c-45fe-a5c6-e4a80900e41d" />
 
 Resultado atual: Na tela Login realizado com sucesso há um botão escrito "Sair da Conta".
 
@@ -222,7 +223,7 @@ Passos para reproduzir:
 
 Resultado atual: O sistema exibe a mensagem “Conta criada com sucesso” mesmo os sem dados informados.
 
-Resultado esperado: O sistema deve impedir o cadastro e solicitar o preenchimento dos campos obrigatórios.
+Resultado esperado: O sistema deve impedir o cadastro e solicitar o preenchimento obrigatório dos campos.
 
 Severidade: 
 
@@ -231,4 +232,51 @@ Prioridade:
 ------
 
 Bug 9
+
+Título: Ajustar nome do botão "Sair da conta" na tela Conta criada com Sucesso
+
+Descrição: Na tela Conta criada com Sucesso há um botão escrito "Sair da Conta".
+
+Passos para reproduzir:
+
+1 - Na tela Login, clicar em "Criar conta"
+
+2 - Na tela Crie sua conta preencher os campos e clicar em "Criar Conta"
+
+3 - O sistema vai exibir a tela Conta criada com Sucesso e o botão "Sair da Conta"
+<img width="904" height="1052" alt="image" src="https://github.com/user-attachments/assets/50b60463-916f-48be-b061-141e55c99209" />
+<img width="886" height="703" alt="image" src="https://github.com/user-attachments/assets/9b482517-280c-45fe-a5c6-e4a80900e41d" />
+
+Resultado atual: Na tela Conta criada com Sucesso há um botão escrito "Sair da Conta".
+
+Resultado esperado: Ajustar o nome do botão "Sair da Conta" para algo como "Continuar para o sistema".
+
+Severidade: 
+
+Prioridade:
+
+------
+
+Bug 10
+
+Título: Ajustar a posição dos campos Telefone e Confirmar senha
+
+Descrição: Na tela Crie sua conta os campos Telefone e Confirmar senha estão desalinhados.
+
+Passos para reproduzir:
+
+1 - Na tela Login, clicar em "Criar conta"
+
+2 - O sistema vai exibir a tela Crie sua conta
+<img width="1109" height="1059" alt="image" src="https://github.com/user-attachments/assets/a5ce751a-d20b-4de2-a53d-d011d09ea38f" />
+
+Resultado atual: Na tela Crie sua conta os campos Telefone e Confirmar senha estão desalinhados.
+
+Resultado esperado: Ajustar os campos Telefone e Confirmar senha na tela Crie sua conta.
+
+Severidade: 
+
+Prioridade:
+
+
 
