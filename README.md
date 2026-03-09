@@ -54,7 +54,7 @@ Passos para reproduzir:
 <img width="900" height="814" alt="image" src="https://github.com/user-attachments/assets/224bdb92-c4b3-43a3-877c-1313bb591ba0" />
 <img width="648" height="517" alt="image" src="https://github.com/user-attachments/assets/2aef05ed-07b9-40bc-9097-14442b33c6c6" />
 <img width="676" height="726" alt="image" src="https://github.com/user-attachments/assets/70f282aa-326e-48d9-b4c8-0164d4c21e93" />
-<img width="650" height="508" alt="image" src="https://github.com/user-attachments/assets/337620ec-167d-49a9-8789-fd126c5a89bf" />
+<img width="1788" height="833" alt="image" src="https://github.com/user-attachments/assets/62a4ce26-df18-4575-91dc-ab9d63bd7120" />
 
 Resultado atual: No canto inferior direito da tela o sistema informa que ocorreu um "Erro inesperado", mas também informa “Login realizado com sucesso”.
 
@@ -87,7 +87,8 @@ Passos para reproduzir:
 
 Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
 
-Resultado esperado: O sistema não deve mostrar mensagem "Conta não encontrada" quando o e-mail está cadastrado
+Resultado esperado: O sistema não deve mostrar a mensagem "Conta não encontrada" se o e-mail já foi cadastrado
+
 Severidade: Médio
 
 Prioridade: Média
@@ -98,7 +99,7 @@ Bug 4
 
 Título: Retirar mensagem "A senha precisa ter no mínimo 8 caracteres e 1 caractere especial." na tela de login
 
-Descrição: Na tela de login aparece a mensagem "A senha precisa ter no mínimo 8 caracteres e 1 caractere especial.", não manter essa mensagem como boa prática de segurança.
+Descrição: Na tela de login aparece a mensagem "A senha precisa ter no mínimo 8 caracteres e 1 caractere especial.".
 
 Passos para reproduzir:
 
@@ -110,7 +111,7 @@ Resultado atual: Na tela de login aparece a mensagem "A senha precisa ter no mí
 
 Resultado esperado: Manter a mensagem "A senha precisa ter no mínimo 8 caracteres e 1 caractere especial." apenas na tela de Criar conta
 
-Severidade: Médio
+Severidade: Baixo
 
 Prioridade: Baixa
 
