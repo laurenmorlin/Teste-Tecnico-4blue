@@ -76,7 +76,7 @@ Passos para reproduzir:
 
 2 - Inserir um e-mail cadastrado no campo  Ex.: marilia.castanheira@gmail.com
 
-3 - Preencher o campo com senha incorreta ou deixa o campo senha vazio
+3 - Preencher o campo com senha incorreta ou deixar o campo senha vazio
 
 4 - Clicar no botão Entrar
 
@@ -134,9 +134,9 @@ Resultado atual: Na tela Login realizado com sucesso há um botão escrito "Sair
 
 Resultado esperado: Ajustar o nome do botão "Sair da Conta" para algo como "Continuar para o sistema".
 
-Severidade: 
+Severidade: Baixo
 
-Prioridade:
+Prioridade: Baixa
 
 ------
 
@@ -160,9 +160,9 @@ Resultado atual: O sistema exibe a mensagem “Conta criada com sucesso” mesmo
 
 Resultado esperado: O sistema deve impedir o cadastro e solicitar o preenchimento obrigatório dos campos.
 
-Severidade: 
+Severidade: Crítico
 
-Prioridade: 
+Prioridade: Alta
 
 ------
 
@@ -186,9 +186,9 @@ Resultado atual: Na tela Conta criada com Sucesso há um botão escrito "Sair da
 
 Resultado esperado: Ajustar o nome do botão "Sair da Conta" para algo como "Continuar para o sistema".
 
-Severidade: 
+Severidade: Baixo
 
-Prioridade:
+Prioridade: Baixa
 
 ------
 
@@ -209,9 +209,9 @@ Resultado atual: Na tela Crie sua conta os campos Telefone e Confirmar senha est
 
 Resultado esperado: Ajustar os campos Telefone e Confirmar senha na tela Crie sua conta.
 
-Severidade: 
+Severidade: Baixo
 
-Prioridade:
+Prioridade: Baixa
 
 ------
 
@@ -233,9 +233,9 @@ Resultado atual: Na tela Crie sua conta existe apenas o campo E-mail.
 
 Resultado esperado: Na tela Crie sua conta apresentar um campo Confirmar E-mail
 
-Severidade: 
+Severidade: Baixo
 
-Prioridade:
+Prioridade: Baixa
 
 ------
 
@@ -257,8 +257,68 @@ Resultado atual: Na tela Crie sua conta o campo Telefone que está aceitando mai
 
 Resultado esperado: Na tela Crie sua conta apresentar uma máscara como guia no campo Telefone Ex.: (00) 00000-0000
 
-Severidade: 
+Severidade: Baixo
 
-Prioridade:
+Prioridade: Média
+
+------
+
+Bug 11
+
+Título: Tratar mensagem de erro na tela de Login
+
+Descrição: Corrigir o título da mensagem “qa-play-sim.lovable.app/ diz” que aparece no pop-up da tela de Login quando uma conta não é encontrada
+
+Passos para reproduzir:
+
+1 - Acessar a tela de login
+
+2 - Inserir um e-mail cadastrado no campo  Ex.: marilia.castanheira@gmail.com
+
+3 - Preencher o campo com senha incorreta ou deixar o campo senha vazio
+
+4 - Clicar no botão Entrar
+
+<img width="734" height="817" alt="image" src="https://github.com/user-attachments/assets/0da17b01-774c-4b0f-9ae8-9595e977ba93" />
+
+Resultado atual: Na tela de Login quando uma conta não é encontrada aparece um pop-up com o “qa-play-sim.lovable.app/ diz”.
+
+Resultado esperado: Na tela de Login quando uma conta não é encontrada apresentar um título tratado como por Ex.: “4blue”.
+
+Severidade: Baixo
+
+Prioridade: Baixa
+
+------
+
+Quais 2 bugs você corrigiria primeiro e por quê?
+Corrigiria primeiramente o Bug 1 - Título: Login realizado com sucesso sem preenchimento de credenciais
+Descrição: Ao acessar a tela de login e selecionar o botão "Entrar" sem preencher os campos de e-mail e senha, o sistema informa que o login foi realizado com sucesso.
+Porque quebra total da autenticação, pode permitir acesso indevido e indica erro grave de validação ou backend
+
+Depois corrigiria Bug 6 - Título: Conta criada com sucesso sem preenchimento dos campos
+Descrição: Na tela de Criar Conta, ao clicar no botão Criar Conta sem preencher nenhum campo, o sistema informa que a conta foi criada com sucesso.
+Porque é uma falha crítica de validação, permite criar contas inválidas, pode poluir banco de dados e pode quebrar login posteriormente.
+
+------
+
+Caso tenha, coloque suas sugestões de melhorias para essas telas.
+Sugestão de melhorias para a Tela de Login
+1.	Validação do e-mail e senha antes de enviar
+Exemplo de mensagem:
+E-mail é obrigatório
+Senha é obrigatória
+
+2.	Não informar se a conta existe
+Exemplo de mensagem:
+E-mail ou senha inválidos
+
+3.	Adicionar um botão "Esqueci minha senha"
 
 
+Sugestão de melhorias para a Tela Criar Conta
+1.	Não aceitar espaços no campo e-mail
+
+2.	Ao preencher o campo Senha validar se atende os requisitos “A senha precisa ter no mínimo 8 caracteres e 1 caractere especial."
+
+3.	Validar se o campo Confirmar Senha está com os mesmos valores do campo Senha
