@@ -76,24 +76,16 @@ Passos para reproduzir:
 
 2 - Inserir um e-mail cadastrado no campo  Ex.: marilia.castanheira@gmail.com
 
-3 - Preencher ou não o campo senha
+3 - Preencher o campo com senha incorreta ou deixa o campo senha vazio
 
 4 - Clicar no botão Entrar
-
-Ex.: Preenchido apenas com números
 
 <img width="675" height="732" alt="image" src="https://github.com/user-attachments/assets/2a46e7dd-1f71-4dc5-8d24-c8c1690db7ed" />
 <img width="586" height="661" alt="image" src="https://github.com/user-attachments/assets/16e19fe9-aa28-45dc-87f8-3f8a464e89b0" />
 
-Ex. 2: Preenchido com um e-mail cadastrado
-
-<img width="664" height="730" alt="image" src="https://github.com/user-attachments/assets/d6eec609-5a7a-46af-b590-7e3523b4ebcb" />
-<img width="581" height="661" alt="image" src="https://github.com/user-attachments/assets/b31e6431-80d3-48c1-9d49-dd60fdf77681" />
-
 Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
 
-Resultado esperado: O sistema deve primeiramente validar se os campos foram preenchidos e informar uma mensagem: "Informe sua Senha".
-
+Resultado esperado: O sistema não deve mostrar mensagem "Conta não encontrada" quando o e-mail está cadastrado
 Severidade: Médio
 
 Prioridade: Média
@@ -124,64 +116,6 @@ Prioridade: Baixa
 
 Bug 5
 
-Título: Mensagem de erro inadequada ao inserir senha inválida
-
-Descrição: Ao inserir um formato válido de e-mail, com senha inválida, o sistema exibe a mensagem "Conta não encontrada. Crie uma conta primeiro."
-
-Passos para reproduzir:
-
-1 - Acessar a tela de login
-
-2 - Inserir um formato de e-mail válido Ex.: teste1@gmail.com
-
-3 - Preencher o campo senha com até 8 caracteres 
-
-4 - Clicar no botão Entrar
-
-<img width="663" height="725" alt="image" src="https://github.com/user-attachments/assets/3f55c7d6-f3b0-4513-ba1d-5f6c01152d3d" />
-<img width="583" height="792" alt="image" src="https://github.com/user-attachments/assets/eed535b0-54b9-42d1-8d38-6cb4a31c77a1" />
-
-Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
-
-Resultado esperado: O comportamento ideal seria que o sistema fizesse uma validação da senha uma vez que "A senha precisa ter no mínimo 8 caracteres e 1 caractere especial.", e então exibir uma mensagem genérica como "Email ou senha inválidos".
-
-Severidade: Médio
-
-Prioridade: Média
-
-------
-
-Bug 6
-
-Título: Mensagem de erro inadequada ao inserir senha inválida
-
-Descrição: Ao inserir um formato válido de e-mail, preencher a senha e depois clicar no botão "Entrar", o sistema exibe a mensagem "Conta não encontrada. Crie uma conta primeiro."
-
-Passos para reproduzir:
-
-1 - Acessar a tela de login.
-
-2 - Inserir um formato de e-mail válido Ex.: teste1@gmail.com
-
-3 - Preencher o campo senha com pelo menos 8 caracteres e 1 caracter especial
-
-4 - Clicar no botão Entrar.
-
-<img width="659" height="722" alt="image" src="https://github.com/user-attachments/assets/1cd3fd86-f385-4793-863b-3c237410412c" />
-<img width="583" height="788" alt="image" src="https://github.com/user-attachments/assets/3194ea15-469a-4d9b-bf78-75815b711f93" />
-
-Resultado atual: O sistema exibe a mensagem: "Conta não encontrada. Crie uma conta primeiro."
-
-Resultado esperado: O comportamento ideal seria que o sistema exibisse uma mensagem genérica e segura, como: "Email ou senha inválidos", evitando a exposição de informações sobre a existência de contas registradas no banco de dados.
-
-Severidade: Médio
-
-Prioridade: Média
-
-------
-
-Bug 7
-
 Título: Ajustar nome do botão "Sair da conta"
 
 Descrição: Na tela Login realizado com Sucesso há um botão escrito "Sair da Conta".
@@ -206,7 +140,7 @@ Prioridade:
 
 ------
 
-Bug 8
+Bug 6
 
 Título: Conta criada com sucesso sem preenchimento dos campos
 
@@ -232,7 +166,7 @@ Prioridade:
 
 ------
 
-Bug 9
+Bug 7
 
 Título: Ajustar nome do botão "Sair da conta" na tela Conta criada com Sucesso
 
@@ -258,7 +192,7 @@ Prioridade:
 
 ------
 
-Bug 10
+Bug 8
 
 Título: Ajustar a posição dos campos Telefone e Confirmar senha
 
@@ -279,5 +213,52 @@ Severidade:
 
 Prioridade:
 
+------
+
+Bug 9
+
+Título: Criar um campo Confirmar E-mail
+
+Descrição: O sistema não possui um campo que ajude a confirmar o e-mail e assim evitar erros ao cadastrar uma contra, incluir um campo Confirmar E-mail.
+
+Passos para reproduzir:
+
+1 - Na tela Login, clicar em "Criar conta"
+
+2 - O sistema vai exibir a tela Crie sua conta
+
+<img width="734" height="817" alt="image" src="https://github.com/user-attachments/assets/0da17b01-774c-4b0f-9ae8-9595e977ba93" />
+
+Resultado atual: Na tela Crie sua conta existe apenas o campo E-mail.
+
+Resultado esperado: Na tela Crie sua conta apresentar um campo Confirmar E-mail
+
+Severidade: 
+
+Prioridade:
+
+------
+
+Bug 10
+
+Título: Criar uma máscara no campo Telefone
+
+Descrição: Aplicar uma máscara automática no campo Telefone para guiar o usuário
+
+Passos para reproduzir:
+
+1 - Na tela Login, clicar em "Criar conta"
+
+2 - O sistema vai exibir a tela Crie sua conta
+
+<img width="734" height="817" alt="image" src="https://github.com/user-attachments/assets/0da17b01-774c-4b0f-9ae8-9595e977ba93" />
+
+Resultado atual: Na tela Crie sua conta o campo Telefone que está aceitando mais do que 11 números.
+
+Resultado esperado: Na tela Crie sua conta apresentar uma máscara como guia no campo Telefone Ex.: (00) 00000-0000
+
+Severidade: 
+
+Prioridade:
 
 
