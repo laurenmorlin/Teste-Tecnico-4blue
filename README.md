@@ -1,3 +1,5 @@
+Identificar e descrever os bugs encontrados
+
 Bug 1
 
 Título: Login realizado com sucesso sem preenchimento de credenciais
