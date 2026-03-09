@@ -253,7 +253,7 @@ Passos para reproduzir:
 
 2 - O sistema vai exibir a tela Crie sua conta
 
-<img width="734" height="817" alt="image" src="https://github.com/user-attachments/assets/0da17b01-774c-4b0f-9ae8-9595e977ba93" />
+<img width="692" height="650" alt="image" src="https://github.com/user-attachments/assets/29b31b30-7deb-4242-986c-196361d65dce" />
 
 Resultado atual: Na tela Crie sua conta o campo Telefone que está aceitando mais do que 11 números.
 
