@@ -233,7 +233,7 @@ Passos para reproduzir:
 
 Resultado atual: Na tela Crie sua conta existe apenas o campo E-mail.
 
-Resultado esperado: Na tela Crie sua conta apresentar um campo Confirmar E-mail
+Resultado esperado: Na tela Crie sua conta apresentar um campo Confirmar E-mail.
 
 Severidade: Baixo
 
@@ -257,7 +257,7 @@ Passos para reproduzir:
 
 Resultado atual: Na tela Crie sua conta o campo Telefone que está aceitando mais do que 11 números.
 
-Resultado esperado: Na tela Crie sua conta apresentar uma máscara como guia no campo Telefone Ex.: (00) 00000-0000
+Resultado esperado: Na tela Crie sua conta apresentar uma máscara como guia no campo Telefone Ex.: (00) 00000-0000 e aceitar apenas números.
 
 Severidade: Baixo
 
