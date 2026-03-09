@@ -292,6 +292,7 @@ Prioridade: Baixa
 ------
 
 Quais 2 bugs você corrigiria primeiro e por quê?
+
 Corrigiria primeiramente o Bug 1 - Título: Login realizado com sucesso sem preenchimento de credenciais
 Descrição: Ao acessar a tela de login e selecionar o botão "Entrar" sem preencher os campos de e-mail e senha, o sistema informa que o login foi realizado com sucesso.
 Porque quebra total da autenticação, pode permitir acesso indevido e indica erro grave de validação ou backend
@@ -303,7 +304,9 @@ Porque é uma falha crítica de validação, permite criar contas inválidas, po
 ------
 
 Caso tenha, coloque suas sugestões de melhorias para essas telas.
+
 Sugestão de melhorias para a Tela de Login
+
 1.	Validação do e-mail e senha antes de enviar
 Exemplo de mensagem:
 E-mail é obrigatório
@@ -317,6 +320,7 @@ E-mail ou senha inválidos
 
 
 Sugestão de melhorias para a Tela Criar Conta
+
 1.	Não aceitar espaços no campo e-mail
 
 2.	Ao preencher o campo Senha validar se atende os requisitos “A senha precisa ter no mínimo 8 caracteres e 1 caractere especial."
