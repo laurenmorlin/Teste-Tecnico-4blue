@@ -120,7 +120,7 @@ Bug 5
 
 Título: Ajustar nome do botão "Sair da conta"
 
-Descrição: Na tela Login realizado com Sucesso há um botão escrito "Sair da Conta".
+Descrição: Na tela Login realizado com Sucesso há um botão escrito "Sair da Conta". Ajustar o botão para quando o login for realizado com sucesso o usuário poder dar sequência no uso do sistema.
 
 Passos para reproduzir:
 
@@ -136,9 +136,9 @@ Resultado atual: Na tela Login realizado com sucesso há um botão escrito "Sair
 
 Resultado esperado: Ajustar o nome do botão "Sair da Conta" para algo como "Continuar para o sistema".
 
-Severidade: Baixo
+Severidade: Alto
 
-Prioridade: Baixa
+Prioridade: Médio
 
 ------
 
@@ -172,7 +172,7 @@ Bug 7
 
 Título: Ajustar nome do botão "Sair da conta" na tela Conta criada com Sucesso
 
-Descrição: Na tela Conta criada com Sucesso há um botão escrito "Sair da Conta".
+Descrição: Na tela Conta criada com Sucesso há um botão escrito "Sair da Conta". Ajustar o botão para quando a conta for criada com sucesso o usuário poder dar sequência no uso do sistema.
 
 Passos para reproduzir:
 
@@ -188,9 +188,9 @@ Resultado atual: Na tela Conta criada com Sucesso há um botão escrito "Sair da
 
 Resultado esperado: Ajustar o nome do botão "Sair da Conta" para algo como "Continuar para o sistema".
 
-Severidade: Baixo
+Severidade: Alto
 
-Prioridade: Baixa
+Prioridade: Média
 
 ------
 
@@ -221,7 +221,7 @@ Bug 9
 
 Título: Criar um campo Confirmar E-mail
 
-Descrição: O sistema não possui um campo que ajude a confirmar o e-mail e assim evitar erros ao cadastrar uma contra, incluir um campo Confirmar E-mail.
+Descrição: O sistema não possui um campo para confirmar o e-mail e evitar erros ao cadastrar uma conta. Incluir um campo Confirmar E-mail.
 
 Passos para reproduzir:
 
@@ -233,7 +233,7 @@ Passos para reproduzir:
 
 Resultado atual: Na tela Crie sua conta existe apenas o campo E-mail.
 
-Resultado esperado: Na tela Crie sua conta apresentar um campo Confirmar E-mail.
+Resultado esperado: Na tela Crie sua conta apresentar um campo Confirmar E-mail e validar se está igual o campo E-mail.
 
 Severidade: Baixo
 
