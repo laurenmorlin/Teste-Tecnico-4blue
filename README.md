@@ -297,7 +297,7 @@ Quais 2 bugs você corrigiria primeiro e por quê?
 
 Corrigiria primeiramente o Bug 1 - Título: Login realizado com sucesso sem preenchimento de credenciais
 Descrição: Ao acessar a tela de login e selecionar o botão "Entrar" sem preencher os campos de e-mail e senha, o sistema informa que o login foi realizado com sucesso.
-Porque quebra total da autenticação, pode permitir acesso indevido e indica erro grave de validação ou backend
+Porque quebra da autenticação, pode permitir acesso indevido, indica erro grave de validação ou backend e risco grave de segurança.
 
 Depois corrigiria Bug 6 - Título: Conta criada com sucesso sem preenchimento dos campos
 Descrição: Na tela de Criar Conta, ao clicar no botão Criar Conta sem preencher nenhum campo, o sistema informa que a conta foi criada com sucesso.
