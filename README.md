@@ -279,7 +279,7 @@ Passos para reproduzir:
 
 4 - Clicar no botão Entrar
 
-<img width="734" height="817" alt="image" src="https://github.com/user-attachments/assets/0da17b01-774c-4b0f-9ae8-9595e977ba93" />
+<img width="574" height="191" alt="image" src="https://github.com/user-attachments/assets/365aa1c0-a81c-4e30-b8f4-f68853555802" />
 
 Resultado atual: Na tela de Login quando uma conta não é encontrada aparece um pop-up com o “qa-play-sim.lovable.app/ diz”.
 
